@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/phoneScreen">
+
+    <fragment
+        android:id="@+id/phoneScreen"
+        android:name="com.jenni.aisleappchallange.ui.screens.PhoneScreen"
+        android:label="fragment_phone"
+        tools:layout="@layout/fragment_phone">
+        <action
+            android:id="@+id/action_phone_to_otp"
+            app:destination="@id/otpScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpScreen"
+        android:name="com.jenni.aisleappchallange.ui.screens.OtpScreen"
+        android:label="otp_screen"
+        tools:layout="@layout/otp_screen" >
+        <argument
+            android:name="phone"
+            app:argType="string" />
+    </fragment>
+</navigation>

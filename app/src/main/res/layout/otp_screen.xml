@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jenni.aisleappchallange.ui.screens.OtpScreen"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/intersemibold"
+        tools:text="+91-1234567890"
+        android:drawablePadding="5dp"
+        android:drawableEnd="@drawable/edit_24"
+        android:drawableTint="@color/black"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="@font/intersemibold"
+        android:text="Enter The\nOTP"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phone_number"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+    <EditText
+        android:id="@+id/otp_et"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:background="@drawable/outline_backgroud"
+        android:ems="10"
+        android:fontFamily="@font/interbold"
+        android:inputType="phone"
+        android:maxLength="5"
+        android:text="9999"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/continue_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/yellow_background"
+        android:fontFamily="@font/interbold"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp"
+        android:text="Continue"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/otp_et"
+        app:layout_constraintTop_toBottomOf="@+id/otp_et" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        tools:text="00:59"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:fontFamily="@font/intersemibold"
+        app:layout_constraintBottom_toBottomOf="@+id/continue_btn"
+        app:layout_constraintStart_toEndOf="@+id/continue_btn"
+        app:layout_constraintTop_toTopOf="@+id/continue_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
